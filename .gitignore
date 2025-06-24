@@ -1,0 +1,57 @@
+# Node modules for both backend and frontend
+node_modules/
+client/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# dotenv environment files
+.env
+.env.local
+.env.*.local
+
+# Build output
+build/
+client/build/
+dist/
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# npm / yarn / pnpm lock files (optional, depends on your preference)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Coverage output
+coverage/
+
+# Cache files
+.cache/
+.client/.cache/
+.next/
+turbo/
+
+# IDE settings
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Optional: Ignore test coverage reports
+coverage/
+
+# Optional: Ignore frontend artifacts
+client/.env
+client/.env.local
+client/.DS_Store
