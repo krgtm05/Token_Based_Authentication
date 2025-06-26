@@ -74,4 +74,5 @@ app.get("/me", function (req, res) {
   res.send("Not found");
 });
 
-app.listen(3000);
+module.exports = app
+// app.listen(3000);
