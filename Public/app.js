@@ -8,7 +8,6 @@ async function signup() {
   });
   alert(res.data);
 }
-
 async function getUserInformation() {
   const res = await axios.get("http://localhost:3000/me", {
     headers: {
@@ -17,7 +16,7 @@ async function getUserInformation() {
   });
 
   const information = document.getElementById("information");
-
+  information.innerHTML = "";
   let p1 = document.createElement("p");
   p1.innerText = "Username : " + res.data.username;
 
@@ -27,7 +26,6 @@ async function getUserInformation() {
   information.appendChild(p1);
   information.appendChild(p2);
 }
-
 async function signin() {
   const username = document.getElementById("signinusername").value;
   const password = document.getElementById("signinpassword").value;
@@ -38,5 +36,10 @@ async function signin() {
   });
   localStorage.setItem("token", res.data);
   alert("Signed In Successfully");
+  getUserInformation();
+}
+
+function logout() {
+  localStorage.removeItem("token");
   getUserInformation();
 }

@@ -108,5 +108,5 @@ app.get("/me", auth, function (req, res) {
   res.send("Not found");
 });
 
-// module.exports = app;
-app.listen(3000);
+module.exports = app;
+// app.listen(3000);
